@@ -1,0 +1,5 @@
+1-) conda activate yolov4-gpu
+
+2-) python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_size 416 --model yolov4
+
+3-) python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video ./data/video/yeni.mp4 --output ./detections/recognition.mp4 --plate
